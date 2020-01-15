@@ -13,6 +13,8 @@
 		304773B723CE42A0000E9276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304773B623CE42A0000E9276 /* Assets.xcassets */; };
 		304773BA23CE42A0000E9276 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304773B923CE42A0000E9276 /* Preview Assets.xcassets */; };
 		304773BD23CE42A0000E9276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304773BB23CE42A0000E9276 /* LaunchScreen.storyboard */; };
+		3077F81D23CF7F8D00F06C11 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F81C23CF7F8D00F06C11 /* StudentListView.swift */; };
+		3077F81F23CF7F9900F06C11 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F81E23CF7F9900F06C11 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		304773B923CE42A0000E9276 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		304773BC23CE42A0000E9276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304773BE23CE42A0000E9276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3077F81C23CF7F8D00F06C11 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		3077F81E23CF7F9900F06C11 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				304773B023CE429F000E9276 /* AppDelegate.swift */,
 				304773B223CE429F000E9276 /* SceneDelegate.swift */,
 				304773B423CE429F000E9276 /* ContentView.swift */,
+				3077F81C23CF7F8D00F06C11 /* StudentListView.swift */,
+				3077F81E23CF7F9900F06C11 /* Student.swift */,
 				304773B623CE42A0000E9276 /* Assets.xcassets */,
 				304773BB23CE42A0000E9276 /* LaunchScreen.storyboard */,
 				304773BE23CE42A0000E9276 /* Info.plist */,
@@ -149,6 +155,8 @@
 				304773B123CE429F000E9276 /* AppDelegate.swift in Sources */,
 				304773B323CE429F000E9276 /* SceneDelegate.swift in Sources */,
 				304773B523CE429F000E9276 /* ContentView.swift in Sources */,
+				3077F81F23CF7F9900F06C11 /* Student.swift in Sources */,
+				3077F81D23CF7F8D00F06C11 /* StudentListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
