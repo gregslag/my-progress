@@ -13,5 +13,7 @@ struct ClassObject: Identifiable {
     var name: String
     var description: String
     var dates: [String]
+    var isFinished: Bool = false
+    var classId: Int
 }
 

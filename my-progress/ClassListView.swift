@@ -9,8 +9,7 @@
 import SwiftUI
 
 struct ClassesListView: View {
-    var classes: [ClassObject] = [ClassObject(name: "Bepid", description: "aloaloalo", dates:["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]), ClassObject(name: "Fast Foundation",description:"bbbbbb",dates: ["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]), ClassObject(name: "Foundation", description: "AAAAA",dates:["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]  )]
-    
+    @EnvironmentObject var mocks: Mocks
     
     @State var showingDetail = false
     
@@ -18,23 +17,22 @@ struct ClassesListView: View {
     var body: some View {
         ZStack {
             List(){
-                ForEach (classes) { c in
+                ForEach (mocks.classes) { c in
                     
                     NavigationLink(destination: DescriptionClassView(classObject: c )){
                         HStack{
                             Text(c.name)
                             Spacer()
-
+                            
                             Button(action: {
                                 self.showingDetail.toggle()
                             }) {
                                 Image(systemName: "person.and.person")
                                     .foregroundColor(.blue)
                             }.sheet(isPresented: self.$showingDetail) {
-                                StudentListView(classObject: c)
+                                StudentListView(classObject: c).environmentObject(self.mocks)
                             }
-                                
-                                .buttonStyle(PlainButtonStyle())
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }
