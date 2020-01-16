@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct StudentListView: View {
-    var classObject: ClassObject
+    @State var classObject: ClassObject
     
     @State var students: [Student] = [
         Student(name: "Gabriel", class_id: 1),
@@ -31,7 +31,7 @@ struct StudentListView: View {
                         .frame(width: 70, height: nil, alignment: .center)
                 }
                 ForEach (0..<students.count) { i in
-                    NavigationLink(destination: StudentActivities()) {
+                    NavigationLink(destination: StudentActivity(student: self.students[i], classObj: self.classObject)) {
                         HStack {
                             Text(self.students[i].name)
                             Spacer()

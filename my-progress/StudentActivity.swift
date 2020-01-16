@@ -11,11 +11,14 @@ import SwiftUI
 struct StudentActivity: View {
     
     @State private var isToggle: Bool = false
+    @State var student: Student
+    @State var classObj: ClassObject
+    @State var name: String = ""
     
     var body: some View {
         VStack {
             HStack {
-                Text("Gabriel Brunichaki")
+                Text("Challenge I")
                 .font(.system(size: 24))
                 
                 Spacer()
@@ -23,12 +26,6 @@ struct StudentActivity: View {
                 Text("01/01/2020")
                 .font(.system(size: 20))
             }
-            
-            Text("Challenge I")
-            .bold()
-            .font(.system(size: 24))
-            .frame(width: nil, height: nil, alignment: .center)
-            .padding(.vertical, 40)
             
             Toggle(isOn: $isToggle) {
                 Text("Entregue")
@@ -39,18 +36,17 @@ struct StudentActivity: View {
                 
                 Spacer()
                 
-                Text("9.5 / 10")
+                TextField("Nota", text: $name)
+                .background(Color.init(red: 235/255, green: 235/255, blue: 235/255))
+                .frame(width: 60, height: 60, alignment: .center)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                
             }
             
             Spacer()
             
         }
         .padding(20)
-    }
-}
-
-struct StudentActivity_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentActivity()
+        .navigationBarTitle(student.name)
     }
 }
