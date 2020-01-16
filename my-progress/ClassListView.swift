@@ -13,7 +13,7 @@ struct ClassesListView: View {
     var body: some View {
         List(){
             ForEach (classes) { c in
-                NavigationLink(destination: DescriptionClassView(classObject: c )){
+                NavigationLink(destination: StudentListView(classObject: c )){
                     HStack{
                         Text(c.name)
                         Spacer()

@@ -13,4 +13,5 @@ struct Student: Identifiable {
     var name: String
     var isPresent: Bool = false
     var deliveredActivity: Bool = false
+    var class_id: Int
 }
