@@ -17,6 +17,12 @@ struct ContentView: View {
                 Image(systemName: "list.bullet")
                 Text("Test View")
             }
+            NavigationView{
+                ClassesListView()
+            }.tabItem{
+                Image(systemName: "rectangle.stack.person.crop")
+                Text("Classes")
+            }
         }
     }
 }
