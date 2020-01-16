@@ -11,7 +11,7 @@ import SwiftUI
 struct ClassObject: Identifiable {
     var id: UUID = UUID()
     var name: String
+    var nameIcon: String
     var description: String
     var dates: [String]
 }
-
