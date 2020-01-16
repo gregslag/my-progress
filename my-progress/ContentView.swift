@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("")
+        TabView {
+            NavigationView{
+                ClassesListView()
+            }.tabItem{
+                Image(systemName: "rectangle.stack.person.crop")
+                Text("Classes")
+            }
+        }
     }
 }
 

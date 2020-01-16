@@ -17,6 +17,9 @@
 		3077F81F23CF7F9900F06C11 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F81E23CF7F9900F06C11 /* Student.swift */; };
 		3077F82123CF84DA00F06C11 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F82023CF84DA00F06C11 /* AddButton.swift */; };
 		3077F82523CF929300F06C11 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F82423CF929300F06C11 /* Slides.swift */; };
+		929C037C23CF854C00411074 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C037B23CF854C00411074 /* Class.swift */; };
+		929C037E23CF8D7F00411074 /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C037D23CF8D7F00411074 /* ClassListView.swift */; };
+		929C038223CF8E4000411074 /* DescriptionClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C038123CF8E4000411074 /* DescriptionClassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		3077F81E23CF7F9900F06C11 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		3077F82023CF84DA00F06C11 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		3077F82423CF929300F06C11 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
+		929C037B23CF854C00411074 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		929C037D23CF8D7F00411074 /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
+		929C038123CF8E4000411074 /* DescriptionClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionClassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				304773BB23CE42A0000E9276 /* LaunchScreen.storyboard */,
 				304773BE23CE42A0000E9276 /* Info.plist */,
 				304773B823CE42A0000E9276 /* Preview Content */,
+				929C037B23CF854C00411074 /* Class.swift */,
+				929C037D23CF8D7F00411074 /* ClassListView.swift */,
+				929C038123CF8E4000411074 /* DescriptionClassView.swift */,
 			);
 			path = "my-progress";
 			sourceTree = "<group>";
@@ -159,9 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				304773B123CE429F000E9276 /* AppDelegate.swift in Sources */,
+				929C037C23CF854C00411074 /* Class.swift in Sources */,
+				929C038223CF8E4000411074 /* DescriptionClassView.swift in Sources */,
 				304773B323CE429F000E9276 /* SceneDelegate.swift in Sources */,
 				304773B523CE429F000E9276 /* ContentView.swift in Sources */,
 				3077F82123CF84DA00F06C11 /* AddButton.swift in Sources */,
+				929C037E23CF8D7F00411074 /* ClassListView.swift in Sources */,
 				3077F81F23CF7F9900F06C11 /* Student.swift in Sources */,
 				3077F81D23CF7F8D00F06C11 /* StudentListView.swift in Sources */,
 				3077F82523CF929300F06C11 /* Slides.swift in Sources */,
