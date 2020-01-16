@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct StudentListView: View {
-    var className: String
+    var classObject: ClassObject
     
     @State var students: [Student] = [
         Student(name: "Gabriel"),
@@ -40,7 +40,7 @@ struct StudentListView: View {
                         .frame(width: 70, height: nil, alignment: .center)
                     }
                 }
-            }.navigationBarTitle(className)
+            }.navigationBarTitle(classObject.name)
             AddButton()
         }
     }
