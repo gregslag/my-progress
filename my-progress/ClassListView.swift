@@ -12,8 +12,7 @@ struct ClassesListView: View {
     @EnvironmentObject var mocks: Mocks
     
     @State var showingDetail = false
-    
-    
+
     var body: some View {
         ZStack {
             List(){

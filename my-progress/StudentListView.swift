@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct StudentListView: View {
-    var classObject: ClassObject
+    @State var classObject: ClassObject
     
     @EnvironmentObject var mocks: Mocks
     

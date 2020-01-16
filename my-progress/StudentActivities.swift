@@ -10,12 +10,13 @@ import SwiftUI
 
 struct StudentActivities: View {
     
-    @State private var isToggle: Bool = false
+    @State var student: Student
+    @State var classObj: ClassObject
 
     var body: some View {
         VStack {
             HStack {
-                Text("Gabriel Brunichaki")
+                Text(classObj.name)
                 .font(.system(size: 24))
                 
                 Spacer()
@@ -23,16 +24,9 @@ struct StudentActivities: View {
                 Text("Encerrada")
                 .font(.system(size: 20))
             }
-            .padding(.horizontal, 20)
+            .padding(20)
             
-            Text("Apple Developer Academy")
-            .bold()
-            .font(.title)
-            .padding(.vertical, 20)
-            .padding(.horizontal, 20)
-            .frame(width: UIScreen.main.bounds.width, height: nil, alignment: .leading)
-            
-            Text("A Apple Developer Academy é uma colaboração entre o Instituto Eldorado e a Faculdade de Informática da PUCRS, em parceria com a Apple, com a finalidade de desenvolver as habilidades de estudantes da área da informática de forma a obter êxito no desenvolvimento de aplicativos no ecossistema Apple.")
+            Text(classObj.description)
             .padding(.horizontal, 20)
                 .foregroundColor(Color.gray)
                 .font(.system(size: 12))
@@ -99,5 +93,6 @@ struct StudentActivities: View {
             
         }
         .padding(.vertical, 20)
+        .navigationBarTitle(student.name)
     }
 }
