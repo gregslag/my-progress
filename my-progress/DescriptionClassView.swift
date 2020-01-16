@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct DescriptionClassView: View {
-    @Binding var classObject: Class
+    var classObject: ClassObject
     var body: some View {
         VStack{
             HStack{

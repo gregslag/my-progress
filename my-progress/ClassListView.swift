@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct ClassesListView: View {
-    var classes: [Class] = [Class(name: "Bepid", description: "aloaloalo", duration:"2 semanas"), Class(name: "Fast Foundation",description:"bbbbbb", duration:"2 semanas"), Class(name: "Foundation", description: "", duration:"2 semanas")]
+    var classes: [ClassObject] = [ClassObject(name: "Bepid", description: "aloaloalo", dates:["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]), ClassObject(name: "Fast Foundation",description:"bbbbbb",dates: ["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]), ClassObject(name: "Foundation", description: "AAAAA",dates:["01-01-2020","02-01-2020","03-01-2020","04-01-2020","05-01-2020","06-01-2020","07-01-2020"]  )]
     var body: some View {
-        List {
+        List(){
             ForEach (classes) { c in
-                Text(c.name)
+                NavigationLink(destination: DescriptionClassView(classObject: c )){
+                    Text(c.name)
+                }
             }
         }.navigationBarTitle("Classes")
     }

@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct Class: Identifiable {
+struct ClassObject: Identifiable {
     var id: UUID = UUID()
     var name: String
     var description: String
-    var duration: String
+    var dates: [String]
 }
 
