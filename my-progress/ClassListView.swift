@@ -14,7 +14,20 @@ struct ClassesListView: View {
         List(){
             ForEach (classes) { c in
                 NavigationLink(destination: DescriptionClassView(classObject: c )){
-                    Text(c.name)
+                    HStack{
+                        Text(c.name)
+                        Spacer()
+                       Button(action: {
+                            print("plain")
+                        }) {
+                            Image(systemName: "person.and.person")
+                                .foregroundColor(.blue)
+                                .frame(width: 75, height: 30, alignment: .trailing)
+
+                            
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                    }
                 }
             }
         }.navigationBarTitle("Classes")
