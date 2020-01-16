@@ -11,4 +11,6 @@ import SwiftUI
 struct Student: Identifiable {
     var id: UUID = UUID()
     var name: String
+    var isPresent: Bool = false
+    var deliveredActivity: Bool = false
 }

@@ -15,6 +15,8 @@
 		304773BD23CE42A0000E9276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304773BB23CE42A0000E9276 /* LaunchScreen.storyboard */; };
 		3077F81D23CF7F8D00F06C11 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F81C23CF7F8D00F06C11 /* StudentListView.swift */; };
 		3077F81F23CF7F9900F06C11 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F81E23CF7F9900F06C11 /* Student.swift */; };
+		3077F82123CF84DA00F06C11 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F82023CF84DA00F06C11 /* AddButton.swift */; };
+		3077F82523CF929300F06C11 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3077F82423CF929300F06C11 /* Slides.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		304773BE23CE42A0000E9276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3077F81C23CF7F8D00F06C11 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		3077F81E23CF7F9900F06C11 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3077F82023CF84DA00F06C11 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		3077F82423CF929300F06C11 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				304773B223CE429F000E9276 /* SceneDelegate.swift */,
 				304773B423CE429F000E9276 /* ContentView.swift */,
 				3077F81C23CF7F8D00F06C11 /* StudentListView.swift */,
+				3077F82023CF84DA00F06C11 /* AddButton.swift */,
+				3077F82423CF929300F06C11 /* Slides.swift */,
 				3077F81E23CF7F9900F06C11 /* Student.swift */,
 				304773B623CE42A0000E9276 /* Assets.xcassets */,
 				304773BB23CE42A0000E9276 /* LaunchScreen.storyboard */,
@@ -155,8 +161,10 @@
 				304773B123CE429F000E9276 /* AppDelegate.swift in Sources */,
 				304773B323CE429F000E9276 /* SceneDelegate.swift in Sources */,
 				304773B523CE429F000E9276 /* ContentView.swift in Sources */,
+				3077F82123CF84DA00F06C11 /* AddButton.swift in Sources */,
 				3077F81F23CF7F9900F06C11 /* Student.swift in Sources */,
 				3077F81D23CF7F8D00F06C11 /* StudentListView.swift in Sources */,
+				3077F82523CF929300F06C11 /* Slides.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
