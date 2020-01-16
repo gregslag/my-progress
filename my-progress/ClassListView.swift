@@ -24,7 +24,7 @@ struct ClassesListView: View {
                         HStack{
                             Text(c.name)
                             Spacer()
-                            //                        NavigationLink(destination: StudentListView(classObject: c)){
+
                             Button(action: {
                                 self.showingDetail.toggle()
                             }) {
@@ -33,7 +33,6 @@ struct ClassesListView: View {
                             }.sheet(isPresented: self.$showingDetail) {
                                 StudentListView(classObject: c)
                             }
-                                //                            }
                                 
                                 .buttonStyle(PlainButtonStyle())
                         }
