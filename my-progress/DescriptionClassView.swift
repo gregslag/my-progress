@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct DescriptionClassView: View {
-    var classObject: ClassObject
+    @Binding var classObject: ClassObject
     var body: some View {
         VStack {
+            
+            Toggle(isOn: $classObject.isFinished) {
+                Text("Finalizada")
+            }
+            .padding(.horizontal, 25)
                 
             Image(classObject.nameIcon)
                 .resizable()

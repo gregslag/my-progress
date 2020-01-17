@@ -16,11 +16,11 @@ struct ClassesListView: View {
     var body: some View {
         ZStack {
             List(){
-                ForEach (mocks.classes) { c in
+                ForEach (0..<mocks.classes.count) { c in
                     
-                    NavigationLink(destination: DescriptionClassView(classObject: c )){
+                    NavigationLink(destination: DescriptionClassView(classObject: self.$mocks.classes[c] )){
                         HStack{
-                            Text(c.name)
+                            Text(self.mocks.classes[c].name)
                             Spacer()
                             
                             Button(action: {
@@ -29,7 +29,7 @@ struct ClassesListView: View {
                                 Image(systemName: "person.and.person")
                                     .foregroundColor(.blue)
                             }.sheet(isPresented: self.$showingDetail) {
-                                StudentListView(classObject: c).environmentObject(self.mocks)
+                                StudentListView(classObject: self.mocks.classes[c]).environmentObject(self.mocks)
                             }
                             .buttonStyle(PlainButtonStyle())
                         }
