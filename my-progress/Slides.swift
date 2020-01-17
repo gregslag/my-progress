@@ -18,6 +18,8 @@ struct Slides: View {
     
     var title: String?
     
+    var isFinished: Bool = false
+    
     var view: AnyView
     
     func offset(for i: Int) -> CGSize {
@@ -34,7 +36,9 @@ struct Slides: View {
                         
                         Spacer()
                         
-                      Text(self.period[self.currentCard])
+                        if !self.isFinished {
+                            Text(self.period[self.currentCard])
+                        }
                     }
                     .padding(.trailing, 20)
                     .padding(.leading, 20)

@@ -17,7 +17,7 @@ struct StudentListView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    Slides(period: classObject.dates, view:
+                    Slides(period: classObject.dates, isFinished: self.classObject.isFinished, view:
                         AnyView(
                             List {
                                 HStack {
