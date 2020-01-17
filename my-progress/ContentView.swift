@@ -15,7 +15,21 @@ struct ContentView: View {
                 ClassesListView()
             }.tabItem{
                 Image(systemName: "rectangle.stack.person.crop")
-                Text("Classes")
+                Text("Turmas")
+            }
+            
+            VStack {
+                Text("")
+            }.tabItem {
+                Image(systemName: "clock")
+                Text("Agenda")
+            }
+            
+            VStack {
+                Text("")
+            }.tabItem {
+                Image(systemName: "person.fill")
+                Text("Perfil")
             }
         }
     }

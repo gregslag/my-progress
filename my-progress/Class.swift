@@ -14,6 +14,6 @@ struct ClassObject: Identifiable {
     var nameIcon: String
     var description: String
     var dates: [String]
-    var isFinished: Bool = false
     var classId: Int
+    var isFinished: Bool
 }

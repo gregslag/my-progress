@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct AddButton: View {
+    
+    @State var showModal = false
+    
+    @State private var isPresented: Bool = false
+    
     var body: some View {
         VStack {
             Spacer()
@@ -17,7 +22,9 @@ struct AddButton: View {
                 Spacer()
                 
                 Button(action: {
-                    print("Add")
+                    if self.showModal {
+                        self.isPresented.toggle()
+                    }
                 }) {
                     Text("+")
                         .font(.system(size: 50))
@@ -32,6 +39,20 @@ struct AddButton: View {
                         radius: 3,
                         x: 3,
                         y: 3)
+                    .sheet(isPresented: self.$isPresented) {
+                        VStack {
+                            Spacer()
+                            Image("qrcode")
+                                .frame(width: 80, height: 80, alignment: .center)
+                            Spacer()
+                            Text("TURMAAPLE515")
+                                .font(.title)
+                                .bold()
+                                .padding(10)
+                                .border(Color.gray)
+                            Spacer()
+                        }
+                }
             }
         }
     }

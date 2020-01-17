@@ -14,18 +14,11 @@ struct Slides: View {
     @State private var currentCard = 0
     @State private var didJustSwipe = false
     
-    var period: [String] = ["07/01", "08/01", "09/01", "10/01", "11/01"]
+    var period: [String]
+    
+    var title: String?
     
     var view: AnyView
-    //    {
-    //        return Rectangle()
-    //            .foregroundColor(.green)
-    //            .cornerRadius(20)
-    //            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-    //            .shadow(radius: 10)
-    //            .padding()
-    //            .opacity(0.3)
-    //    }
     
     func offset(for i: Int) -> CGSize {
         return i == currentCard ? offset : .zero
@@ -35,7 +28,16 @@ struct Slides: View {
         ZStack{
             ForEach(currentCard..<self.period.count, id: \.self) { i in
                 VStack {
-                    Text(self.period[self.currentCard])
+                    HStack {
+                        Text(self.title ?? "")
+                            .font(.system(size: 24))
+                        
+                        Spacer()
+                        
+                      Text(self.period[self.currentCard])
+                    }
+                    .padding(.trailing, 20)
+                    .padding(.leading, 20)
                     self.view
                         .offset(self.offset(for: i))
                         .gesture(self.gesture)

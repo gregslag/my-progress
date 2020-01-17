@@ -36,7 +36,7 @@ struct ClassesListView: View {
                     }
                 }
             }
-            .navigationBarTitle("Classes")
+            .navigationBarTitle("Turmas")
             AddButton()
         }
     }

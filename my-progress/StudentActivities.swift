@@ -10,7 +10,7 @@ import SwiftUI
 
 struct StudentActivities: View {
     
-    @State var student: Student
+    @Binding var student: Student
     @State var classObj: ClassObject
 
     var body: some View {
